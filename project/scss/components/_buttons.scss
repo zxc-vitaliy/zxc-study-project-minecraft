@@ -1,0 +1,76 @@
+.btn {
+	display: flex;
+	white-space: nowrap;
+	align-items: center;
+	box-shadow: 0 5px 5px rgba(162, 201, 22, 0.25);
+	border-radius: 3px;
+	transition: all 0.25s;
+}
+
+.btn-green {
+	@extend .btn;
+	background-color: #a2c916;
+	padding: 16px 20px;
+	width: 185px;
+
+	&__title {
+		font-size: 13px;
+		font-weight: 400;
+		color: #ffffff;
+		margin-left: 22px;
+	}
+
+	&:hover {
+		background-color: #A2C99C;
+	}
+}
+
+.btn-orange {
+	@extend .btn;
+	background-color: #fba029;
+	background-image: linear-gradient(to right, #fba405 0%, #ffcb2e 100%);
+	padding: 24px 31px;
+
+	&__title {
+		font-size: 18px;
+		color: #ffffff;
+		margin-left: 22px;
+	}
+
+	&:hover {
+		background-image: linear-gradient(to right, #FBA49A 0%, #ffcb2e 100%);
+	}
+}
+
+.btn-red {
+	@extend .btn;
+	background-color: #fba029;
+	background-image: linear-gradient(to right, #fc5b42 0%, #ff896b 100%);
+	padding: 24px 31px;
+
+	&__title {
+		font-size: 18px;
+		color: #ffffff;
+		margin-left: 22px;
+	}
+	&:hover {
+		background-image: linear-gradient(to right, #FC5BAA 0%, #ff896b 100%);
+	}
+}
+
+.btn-red-wrapper {
+	margin-top: 32px;
+}
+
+.btn-blue {
+	@extend .btn;
+	background-color: #29b6ff;
+	padding: 14px 17px;
+	&__title {
+		font-family: "Proxima Nova";
+		font-size: 10px;
+		font-weight: 700;
+		color: #ffffff;
+		margin-left: 14px;
+	}
+}
